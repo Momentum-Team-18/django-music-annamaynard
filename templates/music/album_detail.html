@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}Anna's Albums{% endblock %}
+{% block content %}
+<br>
+<div class="actions">
+    <h6><a href="{% url 'artist-list' %}">ARTISTS</a></h6>
+    <h6> | </h6>    
+    <h6><a href="{% url 'album-list' %}">ALBUMS</a></h6>
+    <h6> | </h6>
+    <h6><a href="{% url 'add-album' %}">ADD NEW ALBUM</a></h6>
+    </div>
+    {% for album in albums %}
+    <h4><a href="{% url 'album-list' album.pk %}">{{album}}</a></h4>
+    {% endfor %}
+    <br>
+    <br>
+
+
+{% endblock %}

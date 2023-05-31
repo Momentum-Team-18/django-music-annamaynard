@@ -1,0 +1,39 @@
+header {
+    font-family: Arial, sans-serif;
+    color: #000;
+    background-color: #ffffff;
+    text-decoration: underline;
+    font-size: 55px;
+    font-weight:bold;
+    padding:10px;
+}
+
+.container {
+    font-family: Arial, sans-serif;
+    color: #000;
+    background-color: #ffffff;
+    border: 2px solid #000;
+    padding: 30px;
+}
+h1{
+    text-decoration: underline;
+}
+h3{
+    text-decoration: underline;
+    font-size: 20px;
+}
+a {
+    color: #000;
+    text-decoration: none;
+
+}
+.actions {
+    display:flex;
+}
+.actions h6 {
+    margin-right: 10px;
+}
+.image{
+    width:300px;
+    height:300px;
+}
