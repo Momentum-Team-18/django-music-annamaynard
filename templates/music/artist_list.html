@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block title %}Anna's Albums{% endblock %}
+{% block title %}Score- Artist List{% endblock %}
 {% block content %}
 <br>
 <div class="actions">
@@ -9,8 +9,11 @@
     <h6> | </h6>
     <h6><a href="{% url 'add-album' %}">ADD NEW ALBUM</a></h6>
     </div>
-    {% for album in albums %}
-    <h4><a href="{% url 'artist-list' %}">{{album.artist}}</a></h4>
+    {% for artists in artists %}
+    <h4><a href="{% url 'artist-list' %}">{{artist.artist}}</a></h4>
     {% endfor %}
 
 {% endblock %}
+
+
+<!-- this page is maybe not necessary  -->

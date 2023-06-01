@@ -37,3 +37,11 @@ class Song(models.Model):
 
     def __str__(self):
         return self.song
+
+
+class Deck(models.Model):
+    word = models.CharField(max_length=50)
+    description = models.CharField(max_length=600)
+
+    def __str__(self):
+        return self.word
